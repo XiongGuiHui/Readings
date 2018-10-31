@@ -35,6 +35,8 @@ For efficiency, if your name is `张三`, then the branch should be `zhangsan`, 
 ## How
 
 ## Set up environment
+
+##### For member in XiongGuiHui
 1. clone this repo
 ```
 git clone https://github.com/XiongGuiHui/Readings
@@ -50,11 +52,14 @@ The parameter **yourname** can be chosen arbitrarily, but shoule be different fr
 git push --set-upstream origin yourname
 ```
 
+##### For everyone wanna commit
+> TODO
+
+
 ## contribute
-1. git pull origin master
 1. git add .
 2. git commit -m "a short message you wanna see"
-3. git merge origin master
+
 
 
 ## misc
@@ -63,4 +68,8 @@ git push --set-upstream origin yourname
 rename 'y/A-Z/a-z/' filename
 ```
 
-3. syntax of markdown
+3. Learn markdown
+> TODO
+4. Learn git
+> TODO
+
