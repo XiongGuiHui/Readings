@@ -10,8 +10,8 @@ For efficiency, if your name is `张三`, then the branch should be `zhangsan`, 
 
 ### File name and img name
 1. For every papers, create a markdown file.
-2. File name should be lowercase and seperated by space.
-3. If file have images, you should creat a directory under **./img** and put them into it.
+2. File name should be lowercase and separated by `-`.
+3. If file have images, you should create a directory under **./img** and put them into it.
 ```
 ├── img
 │   └── amd-opteron
@@ -31,12 +31,11 @@ For efficiency, if your name is `张三`, then the branch should be `zhangsan`, 
 2. English is recommended if it can be expressed clearly.
 
 
-
 ## How
 
-## Set up environment
+### For member in XiongGuiHui
 
-##### For member in XiongGuiHui
+##### Set up environment
 1. clone this repo
 ```
 git clone https://github.com/XiongGuiHui/Readings
@@ -52,24 +51,35 @@ The parameter **yourname** can be chosen arbitrarily, but shoule be different fr
 git push --set-upstream origin yourname
 ```
 
-##### For everyone wanna commit
-> TODO
+###### contribute
+4.
+```
+git add .
+```
+5.
+```
+git commit -m "commit message"
+```
+6. push to your branch
+```
+git push origin yourname # yourname is branch name
+```
 
 
-## contribute
-1. git add .
-2. git commit -m "a short message you wanna see"
+### For everyone wanna commit
+Please refer [this](https://github.com/firstcontributions/first-contributions).
 
 
 
-## misc
-2. rename filename to lowercase 
+### misc
+1. rename filename to lowercase 
 ```
 rename 'y/A-Z/a-z/' filename
 ```
 
+### 
 3. Learn markdown
 > TODO
 4. Learn git
-> TODO
+1. https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 

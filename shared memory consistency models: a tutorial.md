@@ -230,7 +230,6 @@ Correctness of program means that obey the program order
 
 
 
-
 ### Inspired
 1. relaxed model makes compiler have more efficiency optimization ?
 2. data or synchronization
