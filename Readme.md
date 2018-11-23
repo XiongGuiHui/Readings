@@ -5,5 +5,3 @@ This repository isn't a archive for homework, is a cool zone for discussion and 
 
 ## How to Contribute
 Read [this](./CONTRIBUTING.md)
-
-
