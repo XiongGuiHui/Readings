@@ -33,15 +33,27 @@ cahce一致性模型解决的问题（coherence其实保证的就是对**某一�
 
 ### 6.侦听协议和目录协议怎么实现的？
 
-![MEI](MEI.jpg)
+<<<<<<< HEAD:Parallel-Computer.md
+![MEI](./img/amd-opteron/MEI.jpg)
 
-![MESI](MESI.jpg)
+![MESI](./img/amd-opteron/MESI.jpg)
 
-![Dragon](Dragon.jpg)
+![Dragon](./img/amd-opteron/Dragon.jpg)
 
 The four states are valid-exclusive (E), shared-clean (SC), shared-modified (SM), and modified (M). There is no invalid (I) state because the update protocol always keeps blocks in the cache up-to-date.
 
-![Directory](Directory.jpg)
+![Directory](./img/amd-opteron/Directory.jpg)
+=======
+![MEI](./img/MEI.jpg)
+
+![MESI](img/MESI.jpg)
+
+![Dragon](img/Dragon.jpg)
+
+The four states are valid-exclusive (E), shared-clean (SC), shared-modified (SM), and modified (M). There is no invalid (I) state because the update protocol always keeps blocks in the cache up-to-date.
+
+![Directory](img/Directory.jpg)
+>>>>>>> haoyu:src/zhaohaoyu/cache-coherent/Parallel-Computer.md
 
 A read miss by processor i goes to memory and is handled as follows:
 
@@ -97,11 +109,19 @@ The tag field tracks normalized addresses (i.e., the DRAM base address of the ho
 
 ##### 3.4.1 Directory behavior
 
-![MOESI](MOESI.jpg)
+<<<<<<< HEAD:Parallel-Computer.md
+![MOESI](./img/amd-opteron/MOESI.jpg)
 
 目录缺失可能发现对应的目录索引已经充满了有效项，因此其中一项会被新项换出。我们叫这种情况为downgrade probe（降级探测）；这种探测导致一次写回（如果换出项为脏）并且无效被降级的缓存行的所有存在的缓存副本。
 
-![transition](transition.jpg)
+![transition](./img/amd-opteron/transition.jpg)
+=======
+![MOESI](img/MOESI.jpg)
+
+目录缺失可能发现对应的目录索引已经充满了有效项，因此其中一项会被新项换出。我们叫这种情况为downgrade probe（降级探测）；这种探测导致一次写回（如果换出项为脏）并且无效被降级的缓存行的所有存在的缓存副本。
+
+![transition](img/transition.jpg)
+>>>>>>> haoyu:src/zhaohaoyu/cache-coherent/Parallel-Computer.md
 
 There are no notifications of S-state castouts in the protocol. S-state lines in the directory are reclaimed via downgrade probes. S-state evictions were omitted for a number of reasons, due both to performance (potentially large number of eviction messages) and various microarchitecture-specific
 implementation complexities. Performance evaluation showed that S-state eviction notifications were not critical for achieving acceptable directory performance.
