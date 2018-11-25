@@ -56,8 +56,8 @@ same as **overlapped read**
 
 `weak order`
 
-| hardware optimization          | with cache | how to solve | have trouble in uniprocessor | Remark                                                                                                         |
-| :-                  :          | :-:        | :-         : | :-                         : | :-:                                                                                                            |
+| hardware optimizatio           | with cache | how to solve | have trouble in uniprocessor | Remark                                                                                                         |
+| :-:                            | :-:        | :-:          | :-:                          | :-:                                                                                                            |
 | writer buffers with by-passing | No         |              | No                           | overlapped WR, a write following read                                                                          |
 | overlapped write operation     | No         |              | No                           | overlapped WW, two writes                                                                                      |
 | non-blocking read operation    | No         |              | No                           | overlapped RR or RW, from a read to a following read or write, RW is not commonly used in then(maybe now 2018) |
